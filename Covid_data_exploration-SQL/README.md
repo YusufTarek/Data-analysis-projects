@@ -113,9 +113,10 @@ from new.dbo.[covid-data]
 order by location, date
 ```
 
+
 ### 10. Total Cases vs Total Deaths (Likelihood of Dying in the United States):
-    - Calculate the death percentage based on total cases and total deaths in the United States.
-    - Order the results by death percentage in descending order.
+- Calculate the death percentage based on total cases and total deaths in the United States.
+- Order the results by death percentage in descending order.
 
 ```SQL
 select date, total_cases, total_deaths, round((cast(total_deaths as float)/cast(total_cases as float)) * 100, 2) [Death percentange]
@@ -125,8 +126,8 @@ order by [Death percentange] desc
 ```
 
 ### 11. Total Cases vs Population (Percentage of Population Infected in the USA):
-    - Calculate the percentage of the population infected by COVID-19 in the USA.
-    - Order the results by the percentage of population infected in descending order.
+- Calculate the percentage of the population infected by COVID-19 in the USA.
+- Order the results by the percentage of population infected in descending order.
 
 ```SQL
 select location, date, total_cases, 
@@ -137,8 +138,8 @@ order by [Percentage of population infected] desc, date desc
 ```
 
 ### 12. Countries with Highest Infection Rate Compared to Population:
-    - Identify countries with the highest infection rate compared to their population.
-    - Order the results by the percentage of population infected in descending order.
+- Identify countries with the highest infection rate compared to their population.
+- Order the results by the percentage of population infected in descending order.
 
 ```SQl
 select location, population, max(cast(total_cases as float)) [Highest infection count], 
@@ -150,8 +151,8 @@ order by [Percentage of population infected] desc
 ```
 
 ### 13. Countries with Highest Death Count:
-    - Identify countries with the highest death count.
-    - Order the results by the total death count in descending order.
+- Identify countries with the highest death count.
+- Order the results by the total death count in descending order.
 
 
 ```SQl
@@ -163,8 +164,8 @@ order by [Total death count] desc
 ```
 
 ### 14. "Other than Countries" with Highest Death Count:
-    - Identify locations (excluding countries) with the highest death count.
-    - Order the results by the total death count in descending order.
+- Identify locations (excluding countries) with the highest death count.
+- Order the results by the total death count in descending order.
 
 
 ```SQl
@@ -176,8 +177,8 @@ order by [Total death count] desc
 ```
 
 ### 15. Continents with Highest Death Count:
-    - Identify continents with the highest death count.
-    - Order the results by the total death count in descending order.
+- Identify continents with the highest death count.
+- Order the results by the total death count in descending order.
 
 
 ```SQl
@@ -189,8 +190,8 @@ order by [Total death count] desc
 ```
 
 ### 16. Death Percentage by Date:
-    - Calculate the death percentage based on new cases and new deaths for each date.
-    - Order the results by date.
+- Calculate the death percentage based on new cases and new deaths for each date.
+- Order the results by date.
 
 
 ```SQl
@@ -203,7 +204,7 @@ order by date
 ```
 
 ### 17. Total Cases, Total Deaths, and Death Percentage:
-    - Calculate the total cases, total deaths, and death percentage for the entire dataset.
+- Calculate the total cases, total deaths, and death percentage for the entire dataset.
 
 
 ```SQl
@@ -215,8 +216,8 @@ where new_cases > 0 and new_deaths > 0
 
 
 ### 18. Rolling People Vaccinated:
-    - Calculate the rolling total of people vaccinated for each location.
-    - Order the results by location and date.
+- Calculate the rolling total of people vaccinated for each location.
+- Order the results by location and date.
 
 
 ```SQL
@@ -228,8 +229,8 @@ order by 2, 3 -- location and date
 ```
 
 ### 19. Percentage of People Vaccinated by Location:
-    - Use a Common Table Expression (CTE) to calculate the percentage of people vaccinated.
-    - Order the results by the percentage of people vaccinated in descending order.
+- Use a Common Table Expression (CTE) to calculate the percentage of people vaccinated.
+- Order the results by the percentage of people vaccinated in descending order.
 
 ```SQl
 with population_vs_vaccination (continent, location, date, population, new_vaccinations, [Rolling people vaccinated]) as
