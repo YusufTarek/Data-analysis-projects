@@ -4,6 +4,9 @@
 
 This project delves into the exploration of COVID-19 data spanning the years 2020 to 2023. With a dataset covering 255 distinct locations across 6 continents, containing 365,376 rows and 67 columns of data, the analysis aims to uncover valuable insights. The provided SQL queries, numbering 19 in total, have been meticulously designed to extract information on population statistics, infection rates, death counts, and vaccination trends. This README.md provides a comprehensive guide on the queries and their application for a better understanding of the global impact of the pandemic.
 
+## Dataset
+You can download the dataset from: https://ourworldindata.org/covid-deaths
+
 ## Queries and Analysis
 
 ### 1. Population vs Location
