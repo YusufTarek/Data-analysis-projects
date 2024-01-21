@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Python script demonstrates a series of data cleaning operations using the pandas library. The dataset used for this example is 'Customer Call List.xlsx'. The cleaning steps include handling missing values, formatting phone numbers, transforming categorical variables, and more.
+This Python script demonstrates a series of data cleaning operations using the pandas library. The dataset used for this example is **'Customer Call List.xlsx'**. The cleaning steps include handling missing values, formatting phone numbers, transforming categorical variables, and more.
 
 ## Steps
 
