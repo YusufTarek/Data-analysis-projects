@@ -12,7 +12,7 @@ import pandas as pd
 ```
 2. **Read Excel File:**
 ```python
-df = pd.read_excel(r'D:\Data analysis\Datasets\Customer Call List.xlsx')
+df = pd.read_excel(r'Customer Call List.xlsx')
 ```
 
 3. **Drop Duplicates:**
