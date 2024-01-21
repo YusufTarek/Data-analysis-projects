@@ -1,6 +1,6 @@
 # World Population Exploratory Data Analysis (EDA)
 
-Welcome to the World Population Exploratory Data Analysis (EDA) project! In this Python-based analysis, we delve into a comprehensive dataset using powerful libraries such as pandas, seaborn, and matplotlib. The dataset, obtained from a CSV file, encompasses intricate details about global population trends across continents and diverse years.
+Welcome to the **World Population Exploratory Data Analysis (EDA) project!** In this Python-based analysis, we delve into a comprehensive dataset using powerful libraries such as pandas, seaborn, and matplotlib. The dataset, obtained from a CSV file, encompasses intricate details about global population trends across continents and diverse years.
 
 ## Overview
 
