@@ -2,8 +2,6 @@
 
 This GitHub repository presents an end-to-end data analysis project focused on the "London Bike Sharing Dataset" from Kaggle. Starting with data gathering and preprocessing using Python and libraries like Pandas and Kaggle API, the project explores patterns and insights. The cleaned dataset is then seamlessly integrated into Power BI for interactive and dynamic visualizations. Power BI visualizations include line charts depicting bike ride trends over time, column charts showcasing the impact of seasons and weather on ride counts, and donut charts providing insights into holidays and weekends. Additional cards present aggregate statistics such as total bike rides, average temperature, humidity, and wind speed. The integration also introduces a matrix heatmap illustrating the correlation between real temperature, wind speed, and bike ride counts. Together, these visualizations offer a comprehensive overview of bike sharing patterns in London, combining the strengths of both Python and Power BI for a holistic data analysis portfolio project.
 
-Feel free to clone this repository, install the required Python libraries, and explore the provided Power BI file to gain insights and customize visualizations to meet your preferences.
-
 ---
 
 ### Project Overview:
@@ -48,29 +46,44 @@ Extend your exploration of the "London Bike Sharing Dataset" beyond Python by le
 - **X-axis:** Time (year, quarter, month, day)
 - **Y-axis:** Sum of bike rides
 
+![image](https://github.com/YusufTarek/Data-analysis-projects/assets/49103469/a02d25d0-24ad-4cb3-b101-04730fbcf726)
+
+
 ### Slicer:
 
 - Slice and dice data by time (year, quarter, month).
+
+![image](https://github.com/YusufTarek/Data-analysis-projects/assets/49103469/23d09ff6-9cd5-4899-91ff-ff7801bb240e)
 
 ### Column Chart:
 
 - **X-axis:** Season
 - **Y-axis:** Sum of bike rides
 
+![image](https://github.com/YusufTarek/Data-analysis-projects/assets/49103469/13a16266-fa8d-4f9d-bcba-485a88a7cd57)
+
 ### Column Chart:
 
 - **X-axis:** Weather
 - **Y-axis:** Sum of bike rides
+
+![image](https://github.com/YusufTarek/Data-analysis-projects/assets/49103469/32726a32-26c7-497c-a789-739f4983840b)
 
 ### Donut Chart:
 
 - **Legend:** Is Holiday
 - **Values:** Count of Is Holiday
 
+![image](https://github.com/YusufTarek/Data-analysis-projects/assets/49103469/07c26a85-5a5b-4597-b96d-657beffad196)
+
+
 ### Donut Chart:
 
 - **Legend:** Is Weekend
 - **Values:** Count of Is Weekend
+
+![image](https://github.com/YusufTarek/Data-analysis-projects/assets/49103469/d28cb93d-6e9c-4a6e-ad54-7d03c64eb9fe)
+
 
 ### Cards:
 
@@ -85,15 +98,24 @@ Extend your exploration of the "London Bike Sharing Dataset" beyond Python by le
 - **Columns:** Wind Speed in KPH (binned)
 - **Values:** Sum of Bike Rides
 
+![image](https://github.com/YusufTarek/Data-analysis-projects/assets/49103469/5e68f39e-bc06-402e-b84f-9faaf0f2e2ad)
+
+
 ### Column Chart:
 
 - **X-axis:** Hours (derived from the 'Time' column)
 - **Y-axis:** Sum of Bike Rides
 
+![image](https://github.com/YusufTarek/Data-analysis-projects/assets/49103469/1dd6bb6f-460f-49ee-a6ea-28170e304584)
+
+
 ### Column Chart:
 
 - **X-axis:** Time (month)
 - **Y-axis:** Sum of Bike Rides
+
+![image](https://github.com/YusufTarek/Data-analysis-projects/assets/49103469/e14fe281-f204-4eb8-a7c9-763cd6947dd5)
+
 
 ### Usage:
 
