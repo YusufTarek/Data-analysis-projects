@@ -42,15 +42,30 @@ Businesses often grapple with managing extensive sales records. This Power BI pr
 2. **Profit by Date**
    - Create a line chart to visualize monthly profits.
 
-3. **Profit by Country/Region**
+3. **Sales by Date**
+   - Create a line chart to visualize sum of Uints sold by date.
+
+4. **Profit by Country/Region**
    - Create a map to identify countries/regions with the highest profits.
 
-4. **Sales by Product and Segment**
+5. **Sales by Product and Segment**
    - Create a clustered column chart to determine promising products and segments.
 
-5. **Year Slicer**
+6. **Year Slicer**
    - Implement slicers to narrow down performance analysis for each month and year.
 
+7. **Card**
+   - Sum of Units sold
+8. **Card**
+    - Count of Units sold
+9. **Stacked column chart**
+    - Sum of Sales by Country
+10. **Clustered column chart**
+    - Total Sales and Manufacturing Prices by Product
+11. **Clustered column chart**
+    - Sum of  Sales and Sum of COGS (Cost of Goods Sold) by Product
+12. **Clustered column chart**
+    - Sum of Gross Sales and Sum of  Sales by Product
 ---
 
 ## Formatting the Report
