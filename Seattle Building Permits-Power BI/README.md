@@ -19,6 +19,8 @@ Explore and analyze building permits issued or in progress within the city of Se
 ## Data Transformations
 - Transformed 'Action Type' column to capitalize each word in the 'building-permits-current' sheet.
 - Created a new column 'WeekDay' in the 'building-permits' sheet to contain the names of the weekdays.
+  - **DAX Formula:** `WeekDay = Date.DayOfWeekName([AppliedDate])`
+
 
 ## Visualizations
 
