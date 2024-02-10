@@ -3,6 +3,15 @@
 ## Dataset
 Explore and analyze building permits issued or in progress within the city of Seattle, Washington State. The dataset, sourced from [Kaggle](https://www.kaggle.com/datasets/city-of-seattle/seattle-building-permits), provides detailed information on permits, including permit number, value, type, applied date, permit class, status, and more.
 
+## Power BI dashboard
+- **File:** [Construction permits.pbix](https://drive.google.com/file/d/1vvRBCsdTKLlyn3ZJRkEP2H8B83iD0_ds/view?usp=drive_link)
+- **Title:** Seattle Building Permits Analysis - Power BI Project
+
+#### Description
+Dive into the intricacies of Seattle's building permits landscape with this Power BI project. The associated .pbix file encapsulates a comprehensive analysis, offering interactive visualizations, charts, and maps. Gain valuable insights into permit trends, values, types, and more. Whether you're a data enthusiast, urban planner, or researcher, this Power BI analysis provides a profound perspective on Seattle's building permit ecosystem. Explore dynamic charts, filter data dynamically, and uncover patterns to inform strategic decisions related to construction activities.
+
+---
+
 ### Columns Description
 - **PermitNum:** Tracking number in SDCI's system.
 - **Value:** Fair market value of the proposed work.
