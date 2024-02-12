@@ -50,6 +50,11 @@ insurance[BMI category] =
   - **Smokers:** Showcases the percentage of smokers.
   - **Gender:** Highlights the percentage of individuals based on gender.
 
+## Formatting
+- View: Themes, "Executive"
+- Custom format for each visual: Light background, shadow, and visual border
+
+
 ## Conclusion
 
 Uncover valuable insights into demographics, health metrics, and insurance charges within the dataset, providing a comprehensive view of the factors influencing medical costs.
