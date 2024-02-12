@@ -1,59 +1,55 @@
-### Medical Insurance Analysis - Power BI Project
+# Medical Insurance Analysis Power BI Project
 
-#### Dataset
+## Overview
+
 Explore the nuances of health insurance data with this Power BI project, utilizing a dataset containing 1338 rows and 7 columns. The dataset, sourced from [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance), provides valuable insights into various factors influencing medical insurance, including age, BMI, charges, and more.
 
-#### Data Transformations
-- **Charges Column:** Change the data type from decimal to whole number.
-- **Decade Column:** Introduce a new column "Decade" calculating age/10, changing the data type from decimal to a whole number.
-- **BMI Category Column:** Categorize BMI into groups like Underweight, Normal, Overweight, Obese, and Extremely obese.
+## Data Transformations
 
-#### Visualizations
-- **Gauge: Average Age**
-  - Value: Average age
-  - Min: Minimum age
-  - Max: Maximum age
+### Change "Charges" Column Data Type
+Change the data type from decimal to whole number.
 
-- **Gauge: Average BMI**
-  - Value: Average BMI
-  - Min: Minimum BMI
-  - Max: Maximum BMI
+### Add "Decade" Column
+Introduce a new column "Decade" calculating age divided by 10, changing the data type from decimal to a whole number.
+```
+Decade = insurance[age] / 10
+```
 
-- **Gauge: Average Charges**
-  - Value: Average charges
-  - Min: Minimum charges
-  - Max: Maximum charges
+### Add "BMI Category" Column
+Categorize BMI into groups like Underweight, Normal, Overweight, Obese, and Extremely obese.
+```
+insurance[BMI category] =
+    IF(insurance[bmi] < 18.5, "Underweight",
+    IF(insurance[bmi] >= 18.5 && insurance[bmi] < 25 , "Normal",
+    IF(insurance[bmi] >= 25 && insurance[bmi] < 30 , "Overweight",
+    IF(insurance[bmi] >= 30 && insurance[bmi] < 35 , "Obese",
+    IF(insurance[bmi] >= 35, "Extremely obese")))))
+```
 
-- **Text Field: Charges**
-  - Individual medical costs billed by health insurance
+## Visualizations
 
-- **Card: Sum of Charges**
-- **Card: Count of Individuals**
+- ### **Gauges**
+  - Average Age
+  - Average BMI
+  - Average Charges
 
-- **Stacked Column Chart: Decades**
-  - X-axis: Decade
-  - Y-axis: Count of individuals
-  - Legend: Decade
+- ### **Text Field:** 
+    Charges: Individual medical costs billed by health insurance.
 
-- **Stacked Column Chart: BMI Categories**
-  - X-axis: BMI category
-  - Y-axis: Count of BMI category
-  - Legend: BMI category
+- ### **Cards:**
+  - **Sum of Charges:** Provides an overview of the total charges.
+  - **Count of Individuals:** Counts the number of individuals in the dataset.
 
-- **Stacked Column Chart: Count of Children**
-  - X-axis: Children
-  - Y-axis: Count of children
-  - Legend: Children
+- ### **Stacked Column Charts:**
+  - **Decades:** Visualizes the count of individuals in different decades.
+  - **BMI Categories:** Illustrates the count of individuals in different BMI categories.
+  - **Count of Children:** Displays the count of individuals based on the number of children.
+  - **Regions:** Analyzes the count of individuals across different regions.
 
-- **Stacked Column Chart: Regions**
-  - X-axis: Region
-  - Y-axis: Count of Region
-  - Legend: Region
+- ### **Donut Charts:**
+  - **Smokers:** Showcases the percentage of smokers.
+  - **Gender:** Highlights the percentage of individuals based on gender.
 
-- **Donut Chart: Smokers**
-  - Legend: Smoker
-  - Values: Count of smoker
+## Conclusion
 
-- **Donut Chart: Gender**
-  - Legend: Sex
-  - Values: Count of sex
+Uncover valuable insights into demographics, health metrics, and insurance charges within the dataset, providing a comprehensive view of the factors influencing medical costs.
